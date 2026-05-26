@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShiftMD — Hospital Rostering, Reimagined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+        </svg>
+      </div>
+      Shift<span>MD</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn-ghost">Sign in</a>
+      <a href="#" class="btn-primary">Start free trial →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features">Features</a>
+  <a href="#how">How It Works</a>
+  <a href="#product">Product</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <div class="mobile-actions">
+    <a href="#" class="btn-ghost" style="text-align:center; display:block; padding:12px;">Sign in</a>
+    <a href="#" class="btn-primary btn-primary-full">Start free trial →</a>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="container" style="width:100%">
+    <div class="hero-inner">
+      <div class="tag hero-eyebrow">Hospital-grade rostering</div>
+      <h1 class="hero-headline">
+        Staff the right people,<br><em>every single shift</em>
+      </h1>
+      <p class="hero-sub">
+        ShiftMD eliminates scheduling chaos for hospitals and health networks. AI-powered rosters, compliance checks, and real-time conflict resolution — built for ward managers, not spreadsheet wizards.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary btn-large">Start free 14-day trial →</a>
+        <a href="#product" class="btn-ghost" style="padding:13px 28px; font-size:16px; border-radius:10px;">Watch demo</a>
+      </div>
+      <p class="hero-note">No credit card required · Onboard in under 2 hours · HIPAA & AS/NZS 4187 compliant</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">94<span>%</span></div>
+          <div class="stat-label">Reduction in roster conflicts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3.2<span>h</span></div>
+          <div class="stat-label">Saved per manager per week</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">340<span>+</span></div>
+          <div class="stat-label">Hospitals and health networks</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">99<span>.9%</span></div>
+          <div class="stat-label">Uptime SLA guaranteed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Mockup -->
+    <div class="hero-mockup-wrap" style="margin-top: 56px;">
+      <div class="mockup-browser">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">app.shiftmd.com/roster/ward-6b</div>
+        </div>
+        <div class="app-ui">
+          <!-- Sidebar -->
+          <div class="app-sidebar">
+            <div class="sidebar-logo">Shift<span>MD</span></div>
+            <div class="sidebar-section">Rostering</div>
+            <div class="sidebar-item active">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Roster Builder
+            </div>
+            <div class="sidebar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Staff Directory
+            </div>
+            <div class="sidebar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Conflicts
+              <span style="margin-left:auto; background: rgba(239,68,68,.2); color: #fca5a5; font-size:10px; font-weight:700; padding:2px 6px; border-radius:4px;">2</span>
+            </div>
+            <div class="sidebar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Analytics
+            </div>
+            <div class="sidebar-section">Admin</div>
+            <div class="sidebar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M2 12h2M20 12h2M6.34 6.34l-1.41-1.41M19.07 19.07l-1.41-1.41"/></svg>
+              Leave Requests
+            </div>
+          </div>
+          <!-- Main -->
+          <div class="app-main">
+            <div class="app-header">
+              <div>
+                <div class="app-title">Ward 6B — Week of Jun 2</div>
+                <div class="app-sub">General Medicine · 8 staff rostered · 2 conflicts detected</div>
+              </div>
+              <div class="app-actions">
+                <div class="mini-btn">◁ Prev Week</div>
+                <div class="mini-btn">Next Week ▷</div>
+                <div class="mini-btn primary">Publish</div>
+              </div>
+            </div>
+            <div class="app-stats">
+              <div class="app-stat">
+                <div class="app-stat-num">86<span style="font-size:14px;color: #00d4b4;">%</span></div>
+                <div class="app-stat-label">Coverage target</div>
+                <div class="app-stat-trend">↑ On track</div>
+              </div>
+              <div class="app-stat">
+                <div class="app-stat-num">3</div>
+                <div class="app-stat-label">Leave requests</div>
+                <div class="app-stat-trend" style="color:var(--amber)">⚠ 1 pending</div>
+              </div>
+              <div class="app-stat">
+                <div class="app-stat-num">42<span style="font-size:14px;color: #00d4b4;">h</span></div>
+                <div class="app-stat-label">Avg hours / staff</div>
+                <div class="app-stat-trend">✓ In limit</div>
+              </div>
+              <div class="app-stat">
+                <div class="app-stat-num">2</div>
+                <div class="app-stat-label">Conflicts</div>
+                <div class="app-stat-trend" style="color:#fca5a5">● Action needed</div>
+              </div>
+            </div>
+            <div class="roster-grid">
+              <div class="roster-header">
+                <div class="roster-header-cell">Staff</div>
+                <div class="roster-header-cell">Mon</div>
+                <div class="roster-header-cell today">Tue ●</div>
+                <div class="roster-header-cell">Wed</div>
+                <div class="roster-header-cell">Thu</div>
+                <div class="roster-header-cell">Fri</div>
+                <div class="roster-header-cell">Sat</div>
+                <div class="roster-header-cell">Sun</div>
+              </div>
+              <!-- Row 1 -->
+              <div class="roster-row">
+                <div class="roster-name">
+                  <div class="avatar" style="background:#00d4b4;">JR</div>
+                  <span>J. Reyes</span>
+                </div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-off">Off</div>
+                <div class="roster-cell shift-night">Night</div>
+                <div class="roster-cell shift-night">Night</div>
+                <div class="roster-cell shift-off">Off</div>
+                <div class="roster-cell shift-off">Off</div>
+              </div>
+              <!-- Row 2 -->
+              <div class="roster-row">
+                <div class="roster-name">
+                  <div class="avatar" style="background:#f4a723;">MC</div>
+                  <span>M. Chen</span>
+                </div>
+                <div class="roster-cell shift-leave">Leave</div>
+                <div class="roster-cell shift-leave">Leave</div>
+                <div class="roster-cell shift-leave">Leave</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-off">Off</div>
+              </div>
+              <!-- Row 3 -->
+              <div class="roster-row">
+                <div class="roster-name">
+                  <div class="avatar" style="background:#a5b4fc;">SK</div>
+                  <span>S. Kapoor</span>
+                </div>
+                <div class="roster-cell shift-night">Night</div>
+                <div class="roster-cell shift-off">Off</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-oncall">On-call</div>
+                <div class="roster-cell shift-night">Night</div>
+                <div class="roster-cell shift-night">Night</div>
+              </div>
+              <!-- Row 4 -->
+              <div class="roster-row">
+                <div class="roster-name">
+                  <div class="avatar" style="background:#ec4899;">DP</div>
+                  <span>D. Park</span>
+                </div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-day">Day</div>
+                <div class="roster-cell shift-night">Night</div>
+                <div class="roster-cell shift-off">Off</div>
+                <div class="roster-cell shift-off">Off</div>
+                <div class="roster-cell shift-oncall">On-call</div>
+                <div class="roster-cell shift-day">Day</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="logos-section reveal">
+  <div class="container">
+    <p class="logos-label">Trusted by leading health networks</p>
+    <div class="logos-row">
+      <div class="logo-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        Northside Health
+      </div>
+      <div class="logo-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+        Metro General
+      </div>
+      <div class="logo-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        St. Jude's Network
+      </div>
+      <div class="logo-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Coastal Health Partners
+      </div>
+      <div class="logo-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Pinnacle Medical Group
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="tag">Core Features</div>
+      <h2 class="section-title">Everything a ward manager<br>actually needs</h2>
+      <p class="section-sub">Purpose-built for clinical environments — not retrofitted from generic HR tools.</p>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="feature-title">AI Roster Generation</div>
+        <div class="feature-desc">Generate a compliant, conflict-free draft roster in seconds. The engine accounts for skill mix, rest-period legislation, individual preferences, and historical patterns.</div>
+        <div class="feature-badge">★ Most used</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="feature-title">Real-time Conflict Detection</div>
+        <div class="feature-desc">Double-bookings, under-staffed shifts, and award breaches are flagged the moment they occur — with plain-English resolution suggestions and one-click fixes.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <div class="feature-title">Smart Leave Management</div>
+        <div class="feature-desc">Staff submit leave requests via mobile. Managers approve with full coverage-impact visibility. Replacements are auto-suggested from a qualified available pool.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="feature-title">Fatigue & Rest Tracking</div>
+        <div class="feature-desc">Continuous monitoring against EBA and Award obligations. Accumulated hours, mandatory rest periods, and consecutive shift limits are tracked automatically, per staff member.</div>
+        <div class="feature-badge">Compliance</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.64 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6 6l.62-.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="feature-title">Instant Staff Notifications</div>
+        <div class="feature-desc">Published rosters, shift swaps, and urgent callouts pushed directly to staff via SMS, email, or app. Confirmation receipts logged automatically for compliance records.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feature-title">Workforce Analytics</div>
+        <div class="feature-desc">Understand your staffing patterns, overtime spend, leave trends, and skill-mix health across wards and departments. Export board-ready reports in one click.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="tag">Process</div>
+      <h2 class="section-title">Live in days, not months</h2>
+      <p class="section-sub">We've cut out the implementation complexity that plagues legacy workforce systems.</p>
+    </div>
+    <div class="steps-grid reveal">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Connect your data</div>
+        <div class="step-desc">Import staff profiles, qualifications, and historical rosters from your existing HRIS or via CSV. Most teams complete setup in under 2 hours.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Configure your rules</div>
+        <div class="step-desc">Set your Award obligations, skill-mix requirements, and ward preferences. ShiftMD includes pre-built templates for major Australian and NZ Awards.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Generate your roster</div>
+        <div class="step-desc">Hit generate. Review the AI-drafted roster, make any tweaks, then publish directly to staff. Conflicts are caught before you go live.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-title">Run and improve</div>
+        <div class="step-desc">Analytics surface patterns over time. The AI learns your ward's rhythm and gets more accurate with every published roster.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase-section" id="product">
+  <div class="container">
+    <div class="showcase-grid reveal">
+      <div class="showcase-content">
+        <div class="tag">Conflict Resolution Engine</div>
+        <h2 class="section-title" style="text-align:left; margin-top: 16px;">Catch issues before<br>they become incidents</h2>
+        <p style="color:var(--muted); font-weight:300; font-size:16px; line-height:1.7; margin-top:8px;">
+          ShiftMD's rule engine runs continuously against your live roster. Every save triggers a full compliance scan — from FTE limits to minimum-rest requirements.
+        </p>
+        <div class="showcase-features">
+          <div class="showcase-feat">
+            <div class="feat-dot">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="feat-text">
+              <div class="feat-text-title">Award & EBA compliance</div>
+              <div class="feat-text-desc">Checks every shift against configured award obligations. Zero manual cross-referencing.</div>
+            </div>
+          </div>
+          <div class="showcase-feat">
+            <div class="feat-dot">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="feat-text">
+              <div class="feat-text-title">Rest period monitoring</div>
+              <div class="feat-text-desc">Flags consecutive shifts and minimum rest breaches in real time, before publication.</div>
+            </div>
+          </div>
+          <div class="showcase-feat">
+            <div class="feat-dot">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feat-text">
+              <div class="feat-text-title">Skill-mix validation</div>
+              <div class="feat-text-desc">Every shift checked for the right qualifications and seniority mix — never understaffed on senior cover.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-visual">
+        <div class="visual-header">
+          Conflict Monitor
+          <div class="vis-tag">Live · 2 issues</div>
+        </div>
+        <div class="conflict-list">
+          <div class="conflict-item">
+            <div class="conflict-icon ok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00d4b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="conflict-text">
+              <div class="conflict-main">Skill mix — Mon night shift</div>
+              <div class="conflict-detail">2× RN + 1× EN · meets requirement</div>
+            </div>
+            <div class="conflict-badge badge-auto">Resolved</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-icon warn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f4a723" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="conflict-text">
+              <div class="conflict-main">S. Kapoor — rest period breach</div>
+              <div class="conflict-detail">9.5h rest before Tue day shift · min 10h required</div>
+            </div>
+            <div class="conflict-badge badge-warn">Warning</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-icon err">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fca5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            </div>
+            <div class="conflict-text">
+              <div class="conflict-main">Thu evening — RN cover gap</div>
+              <div class="conflict-detail">Minimum 2× RN required · only 1 rostered</div>
+            </div>
+            <div class="conflict-badge badge-flag">Action needed</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-icon ok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00d4b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="conflict-text">
+              <div class="conflict-main">Weekly hours — all staff</div>
+              <div class="conflict-detail">All 8 staff within FTE limits · 0 overtime flags</div>
+            </div>
+            <div class="conflict-badge badge-auto">Compliant</div>
+          </div>
+          <div style="padding: 12px 14px; background: rgba(239,68,68,.06); border-radius: 8px; border: 1px solid rgba(239,68,68,.15); display:flex; align-items:center; gap:12px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fca5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span style="font-size:13px; color:var(--muted); flex:1;">Thu evening: suggested replacement — <strong style="color:var(--text)">A. Ngo (available, RN)</strong></span>
+            <div class="mini-btn primary" style="font-size:11px; cursor:pointer;">Auto-fill</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="tag">Pricing</div>
+      <h2 class="section-title">Transparent pricing,<br>no surprise invoices</h2>
+      <p class="section-sub">Per-ward pricing means you only pay for what you use. Cancel anytime.</p>
+    </div>
+    <div class="pricing-grid reveal">
+
+      <div class="price-card">
+        <div class="price-tier">Starter</div>
+        <div class="price-amount">
+          <div class="price-dollar">$89</div>
+          <div class="price-period">/ ward / month</div>
+        </div>
+        <p class="price-desc">For single wards or clinics getting started with digital rostering.</p>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>Up to 30 staff profiles</li>
+          <li>AI roster generation</li>
+          <li>Conflict detection</li>
+          <li>Leave management</li>
+          <li>Email notifications</li>
+          <li>Standard support</li>
+        </ul>
+        <a href="#" class="btn-teal-solid">Start free trial</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Professional</div>
+        <div class="price-amount">
+          <div class="price-dollar">$179</div>
+          <div class="price-period">/ ward / month</div>
+        </div>
+        <p class="price-desc">For active ward managers who need full compliance coverage and analytics.</p>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>Unlimited staff profiles</li>
+          <li>AI roster + auto-fill</li>
+          <li>Full compliance engine</li>
+          <li>Fatigue & rest tracking</li>
+          <li>SMS + app notifications</li>
+          <li>Workforce analytics</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn-teal-solid">Start free trial</a>
+      </div>
+     
+      <div class="price-card">
+        <div class="price-tier">Enterprise</div>
+        <div class="price-amount">
+          <div class="price-dollar" style="font-size:32px;">Custom</div>
+        </div>
+        <p class="price-desc">For health networks, multi-site operators, and public hospital groups.</p>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>Unlimited wards & sites</li>
+          <li>HRIS/PMS integration</li>
+          <li>SSO & advanced security</li>
+          <li>Dedicated CSM</li>
+          <li>Custom Award templates</li>
+          <li>On-site onboarding</li>
+          <li>99.9% SLA guarantee</li>
+        </ul>
+        <a href="#" class="btn-teal-solid">Talk to sales</a>
+      </div>
+    </div>
+    <p style="text-align:center; font-size:14px; color:var(--muted); margin-top:28px;">All plans include a 14-day free trial. No credit card required.</p>
+  </div>
+</section>
+
+
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="tag">FAQ</div>
+      <h2 class="section-title">Common questions</h2>
+    </div>
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long does it take to set up?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>Most wards are fully operational within 2 hours of signup. You import your staff list (CSV or HRIS sync), configure your shift types, and set your award rules using our templates. Our onboarding wizard walks you through every step.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Which industrial awards are supported?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>ShiftMD ships with pre-built templates for major Australian and New Zealand nursing and allied health awards, including NHPSA, ACNC, NZNO, and public sector agreements. Enterprise customers can configure custom EBAs with our compliance team.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can staff view and manage their own shifts?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>Yes. Staff get a mobile-friendly portal (iOS and Android app included) to view their upcoming shifts, submit leave requests, swap shifts with eligible colleagues, and set preferences. Managers retain full approval control.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Does ShiftMD integrate with our payroll or HRIS?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>Professional and Enterprise plans include API access and pre-built connectors for Employment Hero, Rippling, Oracle HCM, and SAP SuccessFactors. Timesheet exports compatible with major payroll platforms (Xero, MYOB, ADP) are available on all plans.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How secure is our data?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>ShiftMD is SOC 2 Type II certified and HIPAA compliant. Data is encrypted at rest (AES-256) and in transit (TLS 1.3). Australian health customers are hosted on AWS ap-southeast-2 (Sydney). We undergo annual third-party penetration testing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What happens after the free trial?
+          <div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="faq-answer"><p>After 14 days, you'll choose a plan and enter payment details to continue. If you decide ShiftMD isn't right for you, your data is exported and deleted on request — no lock-in, no runaround.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="tag" style="margin: 0 auto 20px;">Ready to get started?</div>
+      <h2 class="cta-title">Your next roster,<br>conflict-free</h2>
+      <p class="cta-sub">Join 340+ hospitals already running smoother shifts with ShiftMD.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn-primary btn-large">Start free 14-day trial →</a>
+        <a href="#" class="btn-ghost" style="padding:13px 28px; font-size:16px; border-radius:10px;">Book a demo</a>
+      </div>
+      <p class="cta-note">No credit card · HIPAA compliant · Cancel anytime</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon" style="width:28px;height:28px;">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:15px;height:15px;fill:#050d1a;">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          Shift<span>MD</span>
+        </div>
+        <p class="footer-tagline">Hospital rostering software that actually works the way clinical teams do.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Product</div>
+        <div class="footer-links">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Integrations</a>
+          <a href="#">Changelog</a>
+          <a href="#">Roadmap</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <div class="footer-links">
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+          <a href="#">Security</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 ShiftMD Pty Ltd. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".price-card");
+    const defaultCard = document.querySelector(".price-card.featured");
+
+    cards.forEach(card => {
+      card.addEventListener("mouseenter", () => {
+        cards.forEach(c => c.classList.remove("featured"));
+        card.classList.add("featured");
+      });
+
+      card.addEventListener("mouseleave", () => {
+        cards.forEach(c => c.classList.remove("featured"));
+
+        if (defaultCard) {
+          defaultCard.classList.add("featured");
+        }
+      });
+    });
+  });
+
+
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
